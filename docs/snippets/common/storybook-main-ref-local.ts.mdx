@@ -8,6 +8,7 @@ const config: StorybookConfig = {
   framework: '@storybook/your-framework',
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
   refs: {
+    // Make sure that refs' keys are lowercase and not camelCase - https://github.com/storybookjs/storybook/issues/22128#issuecomment-1665967441
     react: {
       title: 'React',
       url: 'http://localhost:7007',
